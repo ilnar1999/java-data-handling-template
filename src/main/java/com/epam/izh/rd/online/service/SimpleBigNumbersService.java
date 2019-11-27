@@ -36,8 +36,7 @@ public class SimpleBigNumbersService implements BigNumbersService {
                         isPrime = false; // ... то оно не является простым
                     }
                     if (!isPrime) {continue;} // пропуск текущего числа
-                } else {continue;} // пропуск если текущий элемент равен null, т.к. остальные элементы тоже null
-                if (!isPrime) {continue;} // пропуск текущего числа
+                } else {continue;} // пропуск, если текущий элемент равен null, т.к. остальные элементы тоже null
             }
             if (isPrime) { // если число прошло все проверки...
                 primeNumbers[id++] = number; // ...оно записывается в массив,а id увеличивается на 1
